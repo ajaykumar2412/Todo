@@ -11,7 +11,7 @@ const NavBar = () => {
           <p id="userName">User name</p>
         </div>
         <div className="navContainer2">
-          <h1>TO DO List</h1>
+          <h1>TO DO</h1>
         </div>
       </nav>
     </>

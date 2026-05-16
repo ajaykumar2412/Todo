@@ -1,24 +1,37 @@
 nav{
     display: flex;
-    height: 60px;
-    background-color: aqua;
+    height: 70px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    padding: 0 20px;
 }
 .navContainer{
     display: flex;
     width: auto;
-    /* background-color: red; */
-    justify-content:start;
+    justify-content: start;
     align-items: center;
+    gap: 12px;
 }
 
 .navContainer img{
-    height: 80%;
-    border-radius: 90%;
-    padding: 0 0 0 8px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
 }
 .navContainer2{
     display: flex;
     width: 70%;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
 }

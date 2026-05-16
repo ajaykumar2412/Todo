@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 85vh;
+    padding-top: 30px;
+}
+
+.bodyContainer{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 25px;
+}
+
+.bodyContainer h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+}
+
+.input{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.input input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input button {
+    padding: 14px 28px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.input button:active {
+    transform: translateY(0);
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    background-color: #f5f5f5;
+     background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    /* border-left: 4px solid #667eea; */
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #eff0ff;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+li p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    flex: 1;
+}
+
+.delete {
+    padding: 8px 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.delete:hover {
+    background-color: #ee5a52;
+    transform: scale(1.05);
+}
+
+.delete:active {
+    transform: scale(0.98);
+}
